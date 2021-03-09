@@ -26,3 +26,5 @@ Once logged in, the user can:
 - Create a company profile. 
 
 Through running a company profile, the user can use many of the site’s features through it, similar to a personal profile e.g. Fill it out with information, message others, post updates. A company profile though also allows for the posting of job vacancies and inserting information such as “No. of employees”.  
+
+![](ideas/home-login.JPG)
