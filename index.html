@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <title>ChefsUp</title>
   <link href="/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
   <link href="/css/style.css" rel="stylesheet">
@@ -13,10 +12,24 @@
 </head>
 
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
-
+  <header>
+    <nav class="header__navbar navbar navbar-expand-md fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/"><img class="img-fluid" src="images/logo.png" alt="company logo"></a>
+        <div class="d-grid gap-2 d-md-block">
+          <a class="button btn dark" type="button" href="#">Join Now</a>
+          <a class="button btn light" type="button" href="#">Sign In</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- Hero Banner -->
+    <section class="main__hero-banner">
+      <h1>Welcome to our<br>
+        professional community</h1>
+    </section>
+  </main>
   <script src="/vendors/bootstrap/bootstrap.bundle.min.js"></script>
 
 </body>

@@ -1,3 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* GENERAL STYLES */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
-  padding-top: 5rem;
+  padding: 0;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: #656565;
+  font-weight: normal;
+}
+
+h1 {
+  color: #273e4b;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+
+/* HEADER STYLES */
+.header__navbar {
+  background-color: #5c6e58;
+}
+
+.header__navbar.navbar {
+  padding: 0;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: auto;
+}
+
+.header__navbar a.button.btn {
+  border-radius: 0;
+  font-size: 0.87rem;
+  width: 110px;
+}
+
+.header__navbar a.button.btn.dark {
+  background-color: #5c6e58;
+  border: 1px solid #efede0;
+  color: #efede0;
+}
+
+.header__navbar a.button.btn.light {
+  background-color: #efede0;
+  border: 1px solid #efede0;
+  color: #5c6e58;
+}
+
+a:hover.button.btn.light, a:hover.button.btn.dark {
+  background-color: #273e4b;
+  border: 1px solid #efede0;
+  color: #efede0;
+}
+
+.main__hero-banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/chefscook.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  flex-flow: column wrap;
+  padding-left: 100px;
 }
