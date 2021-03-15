@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.12.1/css/all.css');
 
 /* GENERAL STYLES */
 
@@ -42,6 +43,7 @@ h1 {
   border-radius: 0;
   font-size: 0.87rem;
   width: 110px;
+  margin: 0 5px;
 }
 
 .header__navbar a.button.btn.dark {
@@ -56,7 +58,8 @@ h1 {
   color: #5c6e58;
 }
 
-a:hover.button.btn.light, a:hover.button.btn.dark {
+a:hover.button.btn.light,
+a:hover.button.btn.dark {
   background-color: #273e4b;
   border: 1px solid #efede0;
   color: #efede0;
@@ -73,4 +76,396 @@ a:hover.button.btn.light, a:hover.button.btn.dark {
   display: flex;
   flex-flow: column wrap;
   padding-left: 100px;
+}
+
+/* SIGN UP / LOGIN STYLE */
+.form-container {
+  text-align: left;
+  padding: 0;
+  margin: 0 auto;
+}
+
+a.hiddenanchor {
+  display: none;
+}
+
+.wrapper {
+  width: 60%;
+  right: 0px;
+  min-height: 560px;
+  margin: 0px auto;
+  width: 500px;
+  position: absolute;
+  top: 20%;
+  left: 0%;
+}
+
+.wrapper a {
+  color: #273e4b;
+  text-decoration: underline;
+}
+
+.wrapper h2 {
+  font-size: 2rem;
+  color: #273e4b;
+  padding: 2px 0 30px 0;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.wrapper p {
+  margin-bottom: 15px;
+}
+
+.wrapper p:first-child {
+  margin: 0px;
+}
+
+.wrapper label {
+  color: #273e4b;
+  position: relative;
+}
+
+::-webkit-input-placeholder {
+  color: #656565;
+  font-style: italic;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #656565;
+  font-style: italic;
+}
+
+input {
+  outline: none;
+}
+
+.wrapper input:not([type="checkbox"]) {
+  width: 95%;
+  margin-top: 4px;
+  padding: 10px 5px 10px 30px;
+  border: 1px solid #ddd;
+}
+
+.wrapper input:not([type="checkbox"]):active,
+.wrapper input:not([type="checkbox"]):focus {
+  border: 1px solid #ddd;
+  background: #ddd;
+}
+
+label.username:after {
+  content: "\f007";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #273e4b;
+  position: absolute;
+  left: 10px;
+  top: 36px;
+  width: 30px;
+}
+
+label.password:after {
+  content: "\f084";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #273e4b;
+  position: absolute;
+  left: 10px;
+  top: 36px;
+  width: 30px;
+}
+
+label.email:after {
+  content: "\f1fa";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #273e4b;
+  position: absolute;
+  left: 10px;
+  top: 36px;
+  width: 30px;
+}
+
+.wrapper p.button input {
+  width: 30%;
+  cursor: pointer;
+  background: #273e4b;
+  padding: 8px 5px;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.wrapper p.button input:hover {
+  background: #5c6e58;
+}
+
+.wrapper p.button input:active,
+.wrapper p.button input:focus {
+  position: relative;
+  top: 1px;
+}
+
+p.login.button,
+p.signin.button {
+  text-align: right;
+  margin: 5px 0;
+}
+
+.keeplogin {
+  margin-top: -5px;
+}
+
+.keeplogin input,
+.keeplogin label {
+  display: inline-block;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.keeplogin input#loginkeeping {
+  margin-right: 5px;
+}
+
+.keeplogin label {
+  width: 80%;
+}
+
+p.change_link {
+  position: absolute;
+  left: 0px;
+  height: 20px;
+  width: 100%;
+  padding: 17px 30px 20px 30px;
+  font-size: 16px;
+  text-align: right;
+  border-top: 1px solid #ddd;
+}
+
+.wrapper p.change_link a {
+  display: inline-block;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 2px 10px;
+  color: #273e4b;
+  margin-left: 10px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.wrapper p.change_link a:hover {
+  color: #5c6e58;
+
+}
+
+.wrapper p.change_link a:active {
+  position: relative;
+  top: 1px;
+}
+
+#register,
+#login {
+  position: absolute;
+  top: 0px;
+  width: 90%;
+  padding: 18px 6% 60px 6%;
+  margin: 0 0 35px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+#register {
+  z-index: 21;
+  opacity: 0;
+}
+
+#login {
+  z-index: 22;
+}
+
+#toregister:target~.wrapper #register,
+#tologin:target~.wrapper #login {
+  z-index: 22;
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -ms-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -o-animation-delay: .1s;
+  -ms-animation-delay: .1s;
+  animation-delay: .1s;
+}
+
+#toregister:target~.wrapper #login,
+#tologin:target~.wrapper #register {
+  -webkit-animation-name: fadeOutLeft;
+  -moz-animation-name: fadeOutLeft;
+  -ms-animation-name: fadeOutLeft;
+  -o-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+/** the actual animation, credit where due : http://daneden.me/animate/ ***/
+@-webkit-keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+	}
+}
+
+@-moz-keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-moz-transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-moz-transform: translateX(0);
+	}
+}
+
+@-ms-keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-ms-transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-ms-transform: translateX(0);
+	}
+}
+
+@-o-keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		-o-transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		-o-transform: translateX(0);
+	}
+}
+
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@-webkit-keyframes fadeOutLeft {
+	0% {
+		opacity: 1;
+		-webkit-transform: translateX(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-webkit-transform: translateX(-20px);
+	}
+}
+
+@-moz-keyframes fadeOutLeft {
+	0% {
+		opacity: 1;
+		-moz-transform: translateX(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-moz-transform: translateX(-20px);
+	}
+}
+
+@-ms-keyframes fadeOutLeft {
+	0% {
+		opacity: 1;
+		-ms-transform: translateX(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-ms-transform: translateX(-20px);
+	}
+}
+
+@-o-keyframes fadeOutLeft {
+	0% {
+		opacity: 1;
+		-o-transform: translateX(0);
+	}
+	
+	100% {
+		opacity: 0;
+		-o-transform: translateX(-20px);
+	}
+}
+
+@keyframes fadeOutLeft {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	
+	100% {
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+}
+
+.fadeOutLeft {
+	-webkit-animation-name: fadeOutLeft;
+	-moz-animation-name: fadeOutLeft;
+	-ms-animation-name: fadeOutLeft;
+	-o-animation-name: fadeOutLeft;
+	animation-name: fadeOutLeft;
+}
+
+.animate {
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+
+  -moz-animation-duration: 0.5s;
+  -moz-animation-timing-function: ease;
+  -moz-animation-fill-mode: both;
+
+  -o-animation-duration: 0.5s;
+  -o-animation-timing-function: ease;
+  -o-animation-fill-mode: both;
+
+  -ms-animation-duration: 0.5s;
+  -ms-animation-timing-function: ease;
+  -ms-animation-fill-mode: both;
+
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
 }
