@@ -37,6 +37,7 @@ h1 {
 .navbar-brand img {
   width: 50px;
   height: auto;
+  margin: 5px;
 }
 
 .header__navbar a.button.btn {
@@ -143,7 +144,7 @@ input {
   outline: none;
 }
 
-::placeholder {
+.animate form input::placeholder {
   color: #ccc;
 }
 
@@ -474,12 +475,102 @@ p.change_link {
   animation-fill-mode: both;
 }
 
+/* HOME HEADER STYLE */
+.header__navbar .navbar-search .form-control {
+  background-color: #404d3c;
+  border-radius: 0;
+}
+
+.header__navbar .navbar-search .btn {
+  background-color: #404d3c;
+  color: #efede0;
+  border-radius: 0;
+}
+
+.header__navbar input::placeholder {
+  font-size: 0.8rem;
+}
+
+.header__navbar .img-profile {
+  width: 22px;
+  height: 22px;
+  margin-top: -9px;
+}
+
+.dropdown-toggle::after {
+  margin: -12px 0 0 40px;
+}
+
+.header__navbar .navbar-nav .nav-link {
+  color: #efede0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-size: 0.8rem;
+  margin: 0 5px;
+  position: relative;
+}
+
+.header__navbar .navbar-nav .nav-link i {
+  font-size: 1.2rem;
+}
+
+.header__navbar ul.dropdown-menu {
+  border-radius: 0;
+  background-color: #5c6e58;
+}
+
+.header__navbar a.dropdown-item {
+  color: #efede0;
+  font-size: 0.8rem;
+}
+
+.header__navbar a.dropdown-item:hover {
+  background-color: #404d3c;
+
+}
+
+.header__navbar a.dropdown-item i {
+  margin-right: 5px;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .header__navbar .dropdown-menu[data-bs-popper] {
+    left: -50px;
+    margin-top: 10px;
+  }
+}
 
 
 @media screen and (max-width: 768px) {
   .wrapper {
     top: 80px;
   }
+
+  .header__navbar .container {
+    max-width: 100% !important;
+    flex-wrap: nowrap;
+  }
+
+  .header__navbar .navbar-nav {
+    flex-direction: row;
+  }
+
+  .header__navbar .navbar-nav .nav-link {
+    margin: 10px;
+  }
+
+  .header__navbar .collapse:not(.show) {
+    display: block;
+  }
+
+  .header__navbar .navbar-nav .dropdown-menu {
+    margin-left: -40px;
+  }
+
 }
 
 
@@ -493,8 +584,14 @@ p.change_link {
   }
 
   .wrapper {
-    width: 430px;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
+
+  .header__navbar .navbar-nav .dropdown-menu {
+    position: absolute;
+    margin-left: -40px;
+  }
+
 }
