@@ -96,8 +96,9 @@ a.hiddenanchor {
   margin: 0px auto;
   width: 500px;
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 0%;
+
 }
 
 .wrapper a {
@@ -140,6 +141,10 @@ textarea:-moz-placeholder {
 
 input {
   outline: none;
+}
+
+::placeholder {
+  color: #ccc;
 }
 
 .wrapper input:not([type="checkbox"]) {
@@ -226,7 +231,7 @@ p.signin.button {
 .keeplogin input,
 .keeplogin label {
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-style: italic;
 }
 
@@ -243,15 +248,14 @@ p.change_link {
   left: 0px;
   height: 20px;
   width: 100%;
-  padding: 17px 30px 20px 30px;
-  font-size: 16px;
+  padding: 15px 30px 20px 30px;
+  font-size: 1rem;
   text-align: right;
   border-top: 1px solid #ddd;
 }
 
 .wrapper p.change_link a {
   display: inline-block;
-  font-weight: bold;
   background-color: #fff;
   padding: 2px 10px;
   color: #273e4b;
@@ -280,7 +284,7 @@ p.change_link {
   position: absolute;
   top: 0px;
   width: 90%;
-  padding: 18px 6% 60px 6%;
+  padding: 20px 10px 60px;
   margin: 0 0 35px 0;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -321,131 +325,131 @@ p.change_link {
 
 /** the actual animation, credit where due : http://daneden.me/animate/ ***/
 @-webkit-keyframes fadeInLeft {
-	0% {
-		opacity: 0;
-		-webkit-transform: translateX(-20px);
-	}
-	
-	100% {
-		opacity: 1;
-		-webkit-transform: translateX(0);
-	}
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
 }
 
 @-moz-keyframes fadeInLeft {
-	0% {
-		opacity: 0;
-		-moz-transform: translateX(-20px);
-	}
-	
-	100% {
-		opacity: 1;
-		-moz-transform: translateX(0);
-	}
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
 }
 
 @-ms-keyframes fadeInLeft {
-	0% {
-		opacity: 0;
-		-ms-transform: translateX(-20px);
-	}
-	
-	100% {
-		opacity: 1;
-		-ms-transform: translateX(0);
-	}
+  0% {
+    opacity: 0;
+    -ms-transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -ms-transform: translateX(0);
+  }
 }
 
 @-o-keyframes fadeInLeft {
-	0% {
-		opacity: 0;
-		-o-transform: translateX(-20px);
-	}
-	
-	100% {
-		opacity: 1;
-		-o-transform: translateX(0);
-	}
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
 }
 
 @keyframes fadeInLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-20px);
-	}
-	
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @-webkit-keyframes fadeOutLeft {
-	0% {
-		opacity: 1;
-		-webkit-transform: translateX(0);
-	}
-	
-	100% {
-		opacity: 0;
-		-webkit-transform: translateX(-20px);
-	}
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
 }
 
 @-moz-keyframes fadeOutLeft {
-	0% {
-		opacity: 1;
-		-moz-transform: translateX(0);
-	}
-	
-	100% {
-		opacity: 0;
-		-moz-transform: translateX(-20px);
-	}
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(-20px);
+  }
 }
 
 @-ms-keyframes fadeOutLeft {
-	0% {
-		opacity: 1;
-		-ms-transform: translateX(0);
-	}
-	
-	100% {
-		opacity: 0;
-		-ms-transform: translateX(-20px);
-	}
+  0% {
+    opacity: 1;
+    -ms-transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    -ms-transform: translateX(-20px);
+  }
 }
 
 @-o-keyframes fadeOutLeft {
-	0% {
-		opacity: 1;
-		-o-transform: translateX(0);
-	}
-	
-	100% {
-		opacity: 0;
-		-o-transform: translateX(-20px);
-	}
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateX(-20px);
+  }
 }
 
 @keyframes fadeOutLeft {
-	0% {
-		opacity: 1;
-		transform: translateX(0);
-	}
-	
-	100% {
-		opacity: 0;
-		transform: translateX(-20px);
-	}
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
 }
 
 .fadeOutLeft {
-	-webkit-animation-name: fadeOutLeft;
-	-moz-animation-name: fadeOutLeft;
-	-ms-animation-name: fadeOutLeft;
-	-o-animation-name: fadeOutLeft;
-	animation-name: fadeOutLeft;
+  -webkit-animation-name: fadeOutLeft;
+  -moz-animation-name: fadeOutLeft;
+  -ms-animation-name: fadeOutLeft;
+  -o-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
 }
 
 .animate {
@@ -468,4 +472,29 @@ p.change_link {
   animation-duration: 0.5s;
   animation-timing-function: ease;
   animation-fill-mode: both;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    top: 80px;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .main__hero-banner {
+    padding-left: 30px;
+  }
+
+  .wrapper {
+    width: 430px;
+    display: flex;
+    justify-content: center;
+  }
 }

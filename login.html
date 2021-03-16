@@ -16,8 +16,8 @@
   <header>
     <nav class="header__navbar navbar navbar-expand-md fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="/"><img class="img-fluid" src="images/logo.png" alt="company logo"></a>
-        <div class="d-grid gap-2 d-md-block">
+        <a class="navbar-brand" href="index.html"><img class="img-fluid" src="images/logo.png" alt="company logo"></a>
+        <div class="d-flex gap-2 d-md-block">
           <a class="button btn dark" type="button" href="login.html">Login</a>
           <a class="button btn light" type="button" href="login.html#toregister">Join Now</a>
         </div>
@@ -34,15 +34,14 @@
       <a class="hiddenanchor" id="tologin"></a>
       <div class="wrapper">
         <div id="login" class="animate form">
-          <form action="mysuperscript.php" autocomplete="on">
+          <form action="login.php" method="post" autocomplete="on" enctype="multipart/form-data">
             <h2>Log in</h2>
             <p>
-              <label for="username" class="username"> Your email or username </label>
-              <input id="username" name="username" required="required" type="text"
-                placeholder="my username" />
+              <label for="email" class="email">Your email</label>
+              <input id="email" name="email" required="required" type="email" placeholder="myemail@mail.com" />
             </p>
             <p>
-              <label for="password" class="password"> Your password </label>
+              <label for="password" class="password">Your password</label>
               <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
             </p>
             <p class="keeplogin">
@@ -60,26 +59,19 @@
         </div>
 
         <div id="register" class="animate form">
-          <form action="mysuperscript.php" autocomplete="on">
+          <form action="register.php" method="post" autocomplete="on" enctype="multipart/form-data">
             <h2> Sign up </h2>
             <p>
-              <label for="usernamesignup" class="username">Your username</label>
-              <input id="usernamesignup" name="usernamesignup" required="required" type="text"
-                placeholder="mysuperusername690" />
+              <label for="email" class="email">Your email</label>
+              <input id="email" name="email" required="required" type="email" placeholder="myemail@mail.com" />
             </p>
             <p>
-              <label for="emailsignup" class="email"> Your email</label>
-              <input id="emailsignup" name="emailsignup" required="required" type="email"
-                placeholder="mysupermail@mail.com" />
+              <label for="password" class="password">Your password </label>
+              <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO" />
             </p>
             <p>
-              <label for="passwordsignup" class="password">Your password </label>
-              <input id="passwordsignup" name="passwordsignup" required="required" type="password"
-                placeholder="eg. X8df!90EO" />
-            </p>
-            <p>
-              <label for="passwordsignup_confirm" class="password">Please confirm your password </label>
-              <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password"
+              <label for="password_confirm" class="password">Please confirm your password </label>
+              <input id="password_confirm" name="password_confirm" required="required" type="password"
                 placeholder="eg. X8df!90EO" />
             </p>
             <p class="signin button">
@@ -95,7 +87,6 @@
       </div>
     </section>
   </main>
-  <script src="js/main.js"></script>
   <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 
