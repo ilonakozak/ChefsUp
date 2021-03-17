@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header__top-img">
         <nav class="header__navbar navbar navbar-expand-md fixed-top">
             <div class="container">
                 <div>
@@ -59,11 +59,13 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="DropdownMenuLink">
                                     <li><a class="dropdown-item" href="#"><i class="far fa-edit"></i>My Account</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="far fa-user"></i>Edit Profile</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="far fa-user"></i>Edit Profile</a>
+                                    </li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -72,10 +74,61 @@
             </div>
         </nav>
     </header>
-    <main>
 
-    </main>
-    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <div class="container content">
+        <div class="row">
+            <main class="main__content col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
+                <div class="box shadow-sm border rounded bg-white mb-3">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-article-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-article" type="button" role="tab" aria-controls="nav-article"
+                                aria-selected="true"><i class="far fa-edit"></i> Write an article</button>
+                            <button class="nav-link" id="nav-photo-tab" data-bs-toggle="tab" data-bs-target="#nav-photo"
+                                type="button" role="tab" aria-controls="nav-photo" aria-selected="false"><i
+                                    class="far fa-image"></i> Upload a photo</button>
+                            <button class="nav-link" id="nav-link-tab" data-bs-toggle="tab" data-bs-target="#nav-link"
+                                type="button" role="tab" aria-controls="nav-link" aria-selected="false"><i
+                                    class="fas fa-link"></i> Share a link</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-article" role="tabpanel"
+                            aria-labelledby="nav-article-tab">
+                            <div class="p-3 w-100">
+                                <textarea placeholder="Write your thoughts..."
+                                    class="form-control border-0 p-0 shadow-none" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-photo" role="tabpanel" aria-labelledby="nav-photo-tab">
+                            <div class="p-3 w-100">
+                                <label for="myfile">Select a file:</label>
+                                <input type="file" id="myfile" name="myfile">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-link" role="tabpanel" aria-labelledby="nav-link-tab">
+                            <div class="p-3 w-100">
+                                <label for="url">Website URL</label>
+                                <input type="url" name="url" id="url">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-top p-3 d-flex align-items-center">
+                        <div class="flex-shrink-1">
+                            <input class="btn btn-primary" type="submit" value="Post">
+                        </div>
+                    </div>
+                </div>
+                
+            </main>
+            <aside class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12">b</aside>
+            <aside class="col col-xl-3 order-xl-3 col-lg-6 order-lg-3 col-md-6 col-sm-6 col-12">c</aside>
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="vendors/jquery/jquery.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
 </body>
 
 </html>

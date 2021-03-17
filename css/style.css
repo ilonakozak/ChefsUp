@@ -16,6 +16,35 @@ body {
   line-height: 1.4rem;
   color: #656565;
   font-weight: normal;
+  background-color: #f3f3f3;
+}
+
+.header__top-img {
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/header_cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+}
+.clear {
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+}
+
+input.btn.btn-primary, button.btn.btn-primary {
+  cursor: pointer;
+  background: #273e4b;
+  padding: 8px 15px;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-bottom: none;
+  border-radius: 0;
+  border-color: #273e4b;
 }
 
 h1 {
@@ -23,6 +52,7 @@ h1 {
   font-size: 4rem;
   font-weight: 600;
 }
+
 
 
 /* HEADER STYLES */
@@ -42,7 +72,7 @@ h1 {
 
 .header__navbar a.button.btn {
   border-radius: 0;
-  font-size: 0.87rem;
+  font-size: 0.9rem;
   width: 110px;
   margin: 0 5px;
 }
@@ -533,6 +563,30 @@ p.change_link {
 .header__navbar a.dropdown-item i {
   margin-right: 5px;
 }
+
+/* CONTENT STYLE */
+.container.content {
+  margin-top: -50px;
+}
+
+button#nav-article-tab.nav-link, button#nav-photo-tab.nav-link, button#nav-link-tab.nav-link {
+  color: #273e4b;
+  font-size: 0.9rem;
+}
+.nav-link.active {
+  font-weight: 600;
+}
+
+.main__content .nav-link.active {
+  background-color: #f3f3f3;
+}
+
+.main__content .nav-tabs .nav-link {
+  border: none !important;
+}
+
+
+
 
 
 
