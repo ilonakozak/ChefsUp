@@ -12,7 +12,7 @@ body {
   padding: 0;
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.4rem;
   color: #656565;
   font-weight: normal;
@@ -28,18 +28,14 @@ body {
   background-size: cover;
 
 }
-.clear {
-	margin: 0px;
-	padding: 0px;
-	clear: both;
-}
 
-input.btn.btn-primary, button.btn.btn-primary {
+input.btn.btn-primary,
+button.btn.btn-primary {
   cursor: pointer;
   background: #273e4b;
   padding: 8px 15px;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   margin-bottom: 10px;
   border-bottom: none;
@@ -53,6 +49,25 @@ h1 {
   font-weight: 600;
 }
 
+
+/* SPACING STYLES */
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.mr-3,
+.mx-3 {
+  margin-right: 1rem !important;
+}
+
+/* CHANGE STANDARD STYLES */
+a.text-secondary {
+  text-decoration: none;
+}
+
+.form-control {
+  font-size: 0.9rem;
+}
 
 
 /* HEADER STYLES */
@@ -230,7 +245,7 @@ label.email:after {
   background: #273e4b;
   padding: 8px 5px;
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   margin-bottom: 10px;
   -webkit-transition: all 0.2s linear;
@@ -280,7 +295,7 @@ p.change_link {
   height: 20px;
   width: 100%;
   padding: 15px 30px 20px 30px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: right;
   border-top: 1px solid #ddd;
 }
@@ -569,10 +584,13 @@ p.change_link {
   margin-top: -50px;
 }
 
-button#nav-article-tab.nav-link, button#nav-photo-tab.nav-link, button#nav-link-tab.nav-link {
+button#nav-article-tab.nav-link,
+button#nav-photo-tab.nav-link,
+button#nav-link-tab.nav-link {
   color: #273e4b;
   font-size: 0.9rem;
 }
+
 .nav-link.active {
   font-weight: 600;
 }
@@ -583,6 +601,19 @@ button#nav-article-tab.nav-link, button#nav-photo-tab.nav-link, button#nav-link-
 
 .main__content .nav-tabs .nav-link {
   border: none !important;
+}
+
+.shared__post .dropdown-list-image {
+  position: relative;
+}
+
+.shared__post .dropdown-list-image img {
+  height: 40px;
+  width: 40px;
+}
+
+.shared__post-info {
+  margin-left: 20px;
 }
 
 

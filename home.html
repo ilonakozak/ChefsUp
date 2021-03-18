@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header class="header__top-img">
         <nav class="header__navbar navbar navbar-expand-md fixed-top">
             <div class="container">
@@ -77,7 +78,9 @@
 
     <div class="container content">
         <div class="row">
+            <!-- Midle Column -->
             <main class="main__content col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
+                <!-- Add Post Section -->
                 <div class="box shadow-sm border rounded bg-white mb-3">
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -113,13 +116,85 @@
                             </div>
                         </div>
                     </div>
-                    <div class="border-top p-3 d-flex align-items-center">
+                    <div class="border-top p-3 d-flex align-items-center justify-content-end">
                         <div class="flex-shrink-1">
                             <input class="btn btn-primary" type="submit" value="Post">
                         </div>
                     </div>
                 </div>
-                
+                <!-- Posts Section -->
+                <div class="box shadow-sm border rounded bg-white mb-3 shared__post">
+                    <div class="p-3 d-flex align-items-center border-bottom">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="images/profile.png" alt="">
+                        </div>
+                        <div class="shared__post-info">
+                            <div class="shared__post-name">John Doe</div>
+                            <div class="shared__post-position">Chef at Rizzaros</div>
+                        </div>
+                        <span class="ml-auto small">3 hours</span>
+                    </div>
+                    <div class="p-3 border-bottom shared__post-body">
+                        <p class="mb-0">Tmpo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco <a href="#">laboris consequat.</a></p>
+                    </div>
+                    <div class="p-3 border-bottom shared__post-body">
+                        <a href="#" class="mr-3 text-secondary"><i class="far fa-heart text-danger"></i> 16</a>
+                    </div>
+                    <div class="p-3 border-bottom shared__post-footer">
+                        <a href="#" class="mr-3 text-secondary"><i class="far fa-thumbs-up"></i> Like</a>
+                        <a href="#" class="mr-3 text-secondary"><i class="far fa-comment-alt"></i> Comment</a>
+                        <a href="#" class="mr-3 text-secondary"><i class="fas fa-share-alt"></i> Share</a>
+                    </div>
+                    <div class="p-3">
+                        <textarea placeholder="Add Comment..." class="form-control border-0 p-0 shadow-none"
+                            rows="1"></textarea>
+                    </div>
+                </div>
+
+                <div class="box mb-3 shadow-sm border rounded bg-white shared__post">
+                    <div class="p-3 d-flex align-items-center border-bottom">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="images/profile.png" alt="">
+                        </div>
+                        <div class="shared__post-info">
+                            <div class="shared__post-name">Alex Martin</div>
+                            <div class="shared__post-position">Chef at Rizzaros</div>
+                        </div>
+                        <span class="ml-auto small">3 hours</span>
+                    </div>
+                    <div class="p-3 border-bottom shared__post-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur 😍😎 adipisicing elit, sed do eiusmod tempo
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco <a href="#">laboris consequat.</a></p>
+                        <img src="images/post_image.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="p-3 border-bottom shared__post-body">
+                        <a href="#" class="mr-3 text-secondary"><i class="far fa-heart text-danger"></i> 30</a>
+                    </div>
+                    <div class="p-3 border-bottom shared__post-footer">
+                        <a href="#" class="mr-3 text-secondary"><i class="far fa-thumbs-up"></i> Like</a>
+                        <a href="#" class="mr-3 text-secondary"><i class="far fa-comment-alt"></i> Comment</a>
+                        <a href="#" class="mr-3 text-secondary"><i class="fas fa-share-alt"></i> Share</a>
+                    </div>
+                    <div class="p-3 d-flex align-items-center border-bottom">
+                        <div class="dropdown-list-image mr-3">
+                            <img class="rounded-circle" src="images/profile.png" alt="">
+                        </div>
+                        <div class="shared__post-info">
+                            <div class="shared__post-name">Alex Martin</div>
+                            <div class="shared__post-position">Chef at Rizzaros</div>
+                        </div>
+                        <span class="ml-auto small">2 min</span>
+                    </div>
+                    <div class="p-3 border-bottom shared__post-body">
+                        <p>This is post comment...</a></p>
+                    </div>
+                    <div class="p-3">
+                        <textarea placeholder="Add Comment..." class="form-control border-0 p-0 shadow-none"
+                            rows="1"></textarea>
+                    </div>
+                </div>
             </main>
             <aside class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12">b</aside>
             <aside class="col col-xl-3 order-xl-3 col-lg-6 order-lg-3 col-md-6 col-sm-6 col-12">c</aside>
