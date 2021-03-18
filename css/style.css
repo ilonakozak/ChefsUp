@@ -617,7 +617,7 @@ button#nav-link-tab.nav-link {
   width: 120px;
 }
 
-.left__box-profile a, .left__box-connections a {
+.left__box-profile a, .left__box-connections a, .right__box-jobs a {
   color: #5c6e58;
   text-decoration: none;
   font-weight: 600;
