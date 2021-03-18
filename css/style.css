@@ -603,17 +603,24 @@ button#nav-link-tab.nav-link {
   border: none !important;
 }
 
-.shared__post .dropdown-list-image {
-  position: relative;
-}
-
-.shared__post .dropdown-list-image img {
-  height: 40px;
-  width: 40px;
+.post-image img {
+  height: 50px;
+  width: 50px;
 }
 
 .shared__post-info {
   margin-left: 20px;
+}
+
+.left__box-profile img {
+  height: 120px;
+  width: 120px;
+}
+
+.left__box-profile a, .left__box-connections a {
+  color: #5c6e58;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 
