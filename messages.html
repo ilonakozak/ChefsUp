@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChefsUp</title>
+    <link href="vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header__top-img messages">
+        <nav class="header__navbar navbar navbar-expand-md fixed-top">
+            <div class="container">
+                <div>
+                    <a class="navbar-brand" href="home.html"><img class="img-fluid" src="images/logo.png"
+                            alt="company logo"></a>
+                    <form class="d-none d-sm-inline-block form-inline mr-auto my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control shadow-none border-0"
+                                placeholder="Search people, jobs & more" aria-label="Search"
+                                aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <ul class="navbar-nav ml-auto d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html"><i class="fas fa-home"></i><span
+                                class="d-none d-lg-inline">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="connections.html"><i class="fas fa-user-friends"></i><span
+                                class="d-none d-lg-inline">My Network</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jobs.html"><i class="fas fa-briefcase"></i><span
+                                class="d-none d-lg-inline">Jobs</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="messages.html"><i class="fas fa-comment-dots"></i><span
+                                class="d-none d-lg-inline">Messaging</span></a>
+                    </li>
+                    <div class="collapse navbar-collapse" id="navbarDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"><img class="img-profile rounded-circle"
+                                        src="images/profile.png">
+                                    <span class="d-none d-lg-inline">Me</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="DropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#"><i class="far fa-edit"></i>My Account</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="far fa-user"></i>Edit Profile</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container content">
+        <div class="row">
+            <main class="main__content col col-12">
+                <div class="box shadow rounded bg-white mb-3 main__content-chat">
+                    <h6 class="p-3 border-bottom mb-0 pb-3">Messaging</h6>
+                    <div class="row m-0">
+                        <div class="border-right col-lg-5 col-xl-4 px-0">
+                            <div class="osahan-chat-left">
+                                <div class="position-relative icon-form-control p-3 border-bottom">
+                                    <i class="fas fa-search position-absolute"></i>
+                                    <input placeholder="Search messages" type="text" class="form-control">
+                                </div>
+                                <div class="main__content-chat-list">
+                                    <div class="p-3 d-flex align-items-center border-bottom overflow-hidden">
+                                        <div class="mr-3 post-image"><img class=" rounded-circle"
+                                                src="images/profile.png" alt=""></div>
+                                        <div class="mr-1 overflow-hidden">
+                                            <div class="text-truncate">John Doe</div>
+                                            <div class="small text-truncate overflow-hidden">Pellentesque semper ex
+                                                diam,
+                                                at tristique ipsum varius sed. Pellentesque non metus ullamcorper</div>
+                                        </div>
+                                        <span class="ml-auto mb-auto">
+                                            <div class="text-right text-muted pt-1 small">00:21PM</div>
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="p-3 d-flex align-items-center bg-light border-left border-bottom overflow-hidden">
+                                        <div class="mr-3 post-image"><img class="rounded-circle"
+                                                src="images/profile.png" alt=""></div>
+                                        <div class="mr-1 overflow-hidden">
+                                            <div class="text-truncate">John Doe</div>
+                                            <div class="small text-truncate overflow-hidden">Semper ex diam, at
+                                                tristique ipsum varius sed. Pellentesque non metus ullamcorper</div>
+                                        </div>
+                                        <span class="ml-auto mb-auto">
+                                            <div class="text-right text-muted pt-1 small">00:21PM</div>
+                                        </span>
+                                    </div>
+                                    <div class="p-3 d-flex align-items-center border-bottom overflow-hidden">
+                                        <div class="mr-3 post-image"><img class="rounded-circle"
+                                                src="images/profile.png" alt=""></div>
+                                        <div class="mr-1 overflow-hidden">
+                                            <div class="text-truncate">John Doe</div>
+                                            <div class="small text-truncate overflow-hidden">Pellentesque semper ex
+                                                diam,
+                                                at tristique ipsum varius sed. Pellentesque non metus ullamcorper</div>
+                                        </div>
+                                        <span class="ml-auto mb-auto">
+                                            <div class="text-right text-muted pt-1 small">00:21PM</div>
+                                        </span>
+                                    </div>
+                                    <div class="p-3 d-flex align-items-center border-bottom overflow-hidden">
+                                        <div class="mr-3 post-image"><img class="rounded-circle"
+                                                src="images/profile.png" alt=""></div>
+                                        <div class="mr-1 overflow-hidden">
+                                            <div class="text-truncate">John Doe</div>
+                                            <div class="small text-truncate overflow-hidden">Semper ex diam, at
+                                                tristique ipsum varius
+                                                sed. Pellentesque non metus ullamcorper</div>
+                                        </div>
+                                        <span class="ml-auto mb-auto">
+                                            <div class="text-right text-muted pt-1 small">00:21PM</div>
+                                        </span>
+                                    </div>
+                                    <div class="p-3 d-flex align-items-center border-bottom overflow-hidden">
+                                        <div class="mr-3 post-image"><img class="rounded-circle"
+                                                src="images/profile.png" alt=""></div>
+                                        <div class="mr-1 overflow-hidden">
+                                            <div class="text-truncate">John Doe</div>
+                                            <div class="small text-truncate overflow-hidden">Semper ex diam, at
+                                                tristique ipsum varius
+                                                sed. Pellentesque non metus ullamcorper</div>
+                                        </div>
+                                        <span class="ml-auto mb-auto">
+                                            <div class="text-right text-muted pt-1 small">00:21PM</div>
+                                        </span>
+                                    </div>
+                                    <div class="p-3 d-flex align-items-center border-bottom overflow-hidden">
+                                        <div class="mr-3 post-image"><img class="rounded-circle"
+                                                src="images/profile.png" alt=""></div>
+                                        <div class="mr-1 overflow-hidden">
+                                            <div class="text-truncate">John Doe</div>
+                                            <div class="small text-truncate overflow-hidden">Semper ex diam, at
+                                                tristique ipsum varius
+                                                sed. Pellentesque non metus ullamcorper</div>
+                                        </div>
+                                        <span class="ml-auto mb-auto">
+                                            <div class="text-right text-muted pt-1 small">00:21PM</div>
+                                        </span>
+                                    </div>
+                                    <div class="p-3 d-flex align-items-center border-bottom overflow-hidden">
+                                        <div class="mr-3 post-image"><img class="rounded-circle"
+                                                src="images/profile.png" alt=""></div>
+                                        <div class="mr-1 overflow-hidden">
+                                            <div class="text-truncate">John Doe</div>
+                                            <div class="small text-truncate overflow-hidden">Pellentesque semper ex
+                                                diam,
+                                                at tristique ipsum varius sed. Pellentesque non metus ullamcorper</div>
+                                        </div>
+                                        <span class="ml-auto mb-auto">
+                                            <div class="text-right text-muted pt-1 small">00:21PM</div>
+                                        </span>
+                                    </div>
+                                    <div class="p-3 d-flex align-items-center border-bottom overflow-hidden">
+                                        <div class="mr-3 post-image"><img class="rounded-circle"
+                                                src="images/profile.png" alt=""></div>
+                                        <div class="mr-1 overflow-hidden">
+                                            <div class="text-truncate">John Doe</div>
+                                            <div class="small text-truncate overflow-hidden">Pellentesque semper ex
+                                                diam,
+                                                at tristique ipsum varius sed. Pellentesque non metus ullamcorper</div>
+                                        </div>
+                                        <span class="ml-auto mb-auto">
+                                            <div class="text-right text-muted pt-1 small">00:21PM</div>
+                                        </span>
+                                    </div>
+                                    <div class="p-3 d-flex align-items-center border-bottom overflow-hidden">
+                                        <div class="mr-3 post-image"><img class="rounded-circle"
+                                                src="images/profile.png" alt=""></div>
+                                        <div class="mr-1 overflow-hidden">
+                                            <div class="text-truncate">John Doe</div>
+                                            <div class="small text-truncate overflow-hidden">Pellentesque semper ex
+                                                diam,
+                                                at tristique ipsum varius sed. Pellentesque non metus ullamcorper</div>
+                                        </div>
+                                        <span class="ml-auto mb-auto">
+                                            <div class="text-right text-muted pt-1 small">00:21PM</div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-xl-8 px-0">
+                            <div class="p-3 d-flex align-items-center border-bottom">
+                                <div class="mr-1 overflow-hidden">
+                                    <div class="text-truncate">John Doe</div>
+                                    <div class="small text-truncate overflow-hidden">La Cucina -
+                                        Become a Kitchen Manager with super power</div>
+                                </div>
+                                <span class="ml-auto">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-light btn-sm rounded"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <button class="dropdown-item" type="button"><i class="feather-trash"></i>
+                                                Delete</button>
+                                            <button class="dropdown-item" type="button"><i class="feather-x-circle"></i>
+                                                Turn Off</button>
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+                            <div class="main__content-chat-box p-3 border-top border-bottom bg-light">
+                                <div class="text-center my-3">
+                                    <span class="px-3 py-2 small bg-white shadow-sm  rounded">MAR 21, 2021</span>
+                                </div>
+                                <div class="d-flex align-items-center osahan-post-header">
+                                    <div class="post-image mr-3 mb-auto"><img class="rounded-circle"
+                                            src="images/profile.png" alt=""></div>
+                                    <div class="mr-1">
+                                        <div class="text-truncate h6 mb-3">John Doe</div>
+                                        <p>Hi,</p>
+                                        <p>Welcome to Message Page! How are you?</p>
+                                    </div>
+                                    <span class="ml-auto mb-auto">
+                                        <div class="text-right text-muted pt-1 small">00:21PM</div>
+                                    </span>
+                                </div>
+                                <div class="text-center my-3">
+                                    <span class="px-3 py-2 small bg-white shadow-sm rounded">MAR 21, 2021</span>
+                                </div>
+                                <div class="d-flex align-items-center osahan-post-header">
+                                    <div class="post-image mr-3 mb-auto"><img class="rounded-circle"
+                                            src="images/profile.png" alt=""></div>
+                                    <div class="mr-1">
+                                        <div class="text-truncate h6 mb-3">John Doe</div>
+                                        <p>Hi, I wanted to check my interview status...</p>
+                                    </div>
+                                    <span class="ml-auto mb-auto">
+                                        <div class="text-right text-muted pt-1 small">00:21PM</div>
+                                    </span>
+                                </div>
+                                <div class="text-center my-3">
+                                    <span class="px-3 py-2 small bg-white shadow-sm rounded">MAR 21, 2021</span>
+                                </div>
+                                <div class="d-flex align-items-center osahan-post-header">
+                                    <div class="post-image mr-3 mb-auto"><img class="rounded-circle"
+                                            src="images/profile.png" alt=""></div>
+                                    <div class="mr-1">
+                                        <div class="text-truncate h6 mb-3">John Doe</div>
+                                        <p>Is there anything else that I can do for you?</p>
+                                    </div>
+                                    <span class="ml-auto mb-auto">
+                                        <div class="text-right text-muted pt-1 small">00:21PM</div>
+                                    </span>
+                                </div>
+                                <div class="text-center my-3">
+                                    <span class="px-3 py-2 small bg-white shadow-sm rounded">MAR 21, 2021</span>
+                                </div>
+                                <div class="d-flex align-items-center osahan-post-header">
+                                    <div class="post-image mr-3 mb-auto"><img class="rounded-circle"
+                                            src="images/profile.png" alt=""></div>
+                                    <div class="mr-1">
+                                        <div class="text-truncate h6 mb-3">John Doe</div>
+                                        <p>Great, thank you!</p>
+                                    </div>
+                                    <span class="ml-auto mb-auto">
+                                        <div class="text-right text-muted pt-1 small">00:21PM</div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="w-100 border-top border-bottom">
+                                <textarea placeholder="Write a message…" class="form-control border-0 p-3 shadow-none"
+                                    rows="2"></textarea>
+                            </div>
+                            <div class="p-3 d-flex align-items-center">
+                                <div class="overflow-hidden">
+                                    <button type="button" class="btn btn-light btn-sm rounded">
+                                        <i class="far fa-image"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-light btn-sm rounded">
+                                        <i class="fas fa-paperclip"></i>
+                                    </button>
+                                </div>
+                                <span class="ml-auto">
+                                    <button type="button" class="btn btn-primary btn-sm">
+                                        <i class="feather-send"></i> Send
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="vendors/jquery/jquery.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>
