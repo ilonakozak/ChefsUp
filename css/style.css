@@ -611,6 +611,11 @@ button#nav-link-tab.nav-link {
   border: none !important;
 }
 
+.box-title {
+  color: #273e4b;
+  font-weight: 600;
+}
+
 .post-image img {
   height: 50px;
   width: 50px;
@@ -654,6 +659,8 @@ input.form-control {
   height: 463px;
   min-height: 463px;
 }
+
+/* PROFILE PAGE STYLE */
 
 
 
