@@ -7,3 +7,4 @@ triggerTabList.forEach(function (triggerEl) {
     tabTrigger.show()
   })
 })
+

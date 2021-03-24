@@ -37,6 +37,15 @@ body {
   background-size: cover;
 }
 
+.header__top-img.company {
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/header_cover3.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
 input.btn.btn-primary,
 button.btn.btn-primary {
   cursor: pointer;
@@ -93,20 +102,20 @@ a.text-secondary {
   margin: 5px;
 }
 
-.header__navbar a.button.btn {
+a.button.btn {
   border-radius: 0;
   font-size: 0.9rem;
-  width: 110px;
+  width: 140px;
   margin: 0 5px;
 }
 
-.header__navbar a.button.btn.dark {
+a.button.btn.dark {
   background-color: #5c6e58;
   border: 1px solid #efede0;
   color: #efede0;
 }
 
-.header__navbar a.button.btn.light {
+a.button.btn.light {
   background-color: #efede0;
   border: 1px solid #efede0;
   color: #5c6e58;
@@ -630,7 +639,12 @@ button#nav-link-tab.nav-link {
   width: 120px;
 }
 
-.left__box-profile a, .left__box-connections a, .right__box-jobs a {
+.left__box-profile.company img {
+  height: 240px;
+  width: 240px;
+}
+
+.left__box-profile a, .left__box-connections a, .right__box-jobs a, .company_link a {
   color: #5c6e58;
   text-decoration: none;
   font-weight: 600;

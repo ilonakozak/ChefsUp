@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChefsUp</title>
+    <link href="vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header__top-img company">
+        <nav class="header__navbar navbar navbar-expand-md fixed-top">
+            <div class="container">
+                <div>
+                    <a class="navbar-brand" href="home.html"><img class="img-fluid" src="images/logo.png"
+                            alt="company logo"></a>
+                    <form class="d-none d-sm-inline-block form-inline mr-auto my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control shadow-none border-0"
+                                placeholder="Search people, jobs & more" aria-label="Search"
+                                aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <ul class="navbar-nav ml-auto d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html"><i class="fas fa-home"></i><span
+                                class="d-none d-lg-inline">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="connections.html"><i class="fas fa-user-friends"></i><span
+                                class="d-none d-lg-inline">My Network</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jobs.html"><i class="fas fa-briefcase"></i><span
+                                class="d-none d-lg-inline">Jobs</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="messages.html"><i class="fas fa-comment-dots"></i><span
+                                class="d-none d-lg-inline">Messaging</span></a>
+                    </li>
+                    <div class="collapse navbar-collapse" id="navbarDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"><img class="img-profile rounded-circle"
+                                        src="images/profile.png">
+                                    <span class="d-none d-lg-inline">Me</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="DropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#"><i class="far fa-edit"></i>My Account</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="far fa-user"></i>Edit Profile</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="bg-white shadow border-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="d-flex align-items-center py-3">
+                        <div class="profile-left">
+                            <h5 class="box-title mb-1 mt-0">Rizzaros</h5>
+                            <p class="mb-0 text-muted"> Limerick | William Str. | 1250 followers</p>
+                        </div>
+                        <div class="profile-right ml-auto">
+                            <a class="button btn dark" type="button" href="#"><i class="fas fa-external-link-alt"></i>
+                                Visit website</a>
+                            <a class="button btn dark" type="button" href="#"><i class="fas fa-plus"></i>
+                                Follow</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Right Section -->
+            <aside class="col col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                <!-- Profile Section -->
+                <div class="box mb-3 shadow border rounded bg-white left__box-profile company">
+                    <div class="py-4 px-3 border-bottom text-center">
+                        <img src="images/logo.png" class="img-fluid mt-2 rounded-circle" alt="Responsive image">
+                    </div>
+                    <div class="box-title border-bottom p-3">
+                        <h6 class="m-0">Overview</h6>
+                    </div>
+                    <div class="p-3 border-bottom">
+                        <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+                            as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    </div>
+                    <table class="table table-borderless mb-0">
+                        <tbody>
+                            <tr class="border-bottom">
+                                <th class="p-3">Connections</th>
+                                <td class="p-3">230</td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <th class="p-3">All Employees</th>
+                                <td class="p-3">9</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Connections Section -->
+                <div class="box mb-3 shadow rounded bg-white left__box-connections">
+                    <div class="box-title border-bottom p-3">
+                        <h6 class="m-0">People you might know</h6>
+                    </div>
+                    <div class="p-3 d-flex align-items-center border-bottom">
+                        <div class="mr-3 post-image">
+                            <img class="rounded-circle" src="images/profile.png" alt="">
+                        </div>
+                        <div class="shared__post-info">
+                            <div class="shared__post-name">Alex Martin</div>
+                            <div class="shared__post-position">Chef at Rizzaros</div>
+                        </div>
+                    </div>
+                    <div class="p-3 d-flex align-items-center border-bottom">
+                        <div class="mr-3 post-image">
+                            <img class="rounded-circle" src="images/profile.png" alt="">
+                        </div>
+                        <div class="shared__post-info">
+                            <div class="shared__post-name">Alex Martin</div>
+                            <div class="shared__post-position">Chef at Rizzaros</div>
+                        </div>
+                    </div>
+                    <div class="p-3 d-flex align-items-center border-bottom">
+                        <div class="mr-3 post-image">
+                            <img class="rounded-circle" src="images/profile.png" alt="">
+                        </div>
+                        <div class="shared__post-info">
+                            <div class="shared__post-name">Alex Martin</div>
+                            <div class="shared__post-position">Chef at Rizzaros</div>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden text-center">
+                        <a class="p-3 d-block" href="connections.html">See all your connections</a>
+                    </div>
+                </div>
+            </aside>
+            <!-- Midle Column -->
+            <main class="main__content col col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+                <!-- About Company Section -->
+                <div class="box shadow border rounded bg-white mb-3">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-about-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-about" type="button" role="tab" aria-controls="nav-about"
+                                aria-selected="true"><i class="far fa-building"></i> About</button>
+                            <button class="nav-link" id="nav-posts-tab" data-bs-toggle="tab" data-bs-target="#nav-posts"
+                                type="button" role="tab" aria-controls="nav-posts" aria-selected="false"><i
+                                    class="far fa-newspaper"></i> Posts</button>
+                            <button class="nav-link" id="nav-jobs-tab" data-bs-toggle="tab" data-bs-target="#nav-jobs"
+                                type="button" role="tab" aria-controls="nav-jobs" aria-selected="false"><i
+                                    class="fas fa-briefcase"></i> Jobs</button>
+                            <button class="nav-link" id="nav-people-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-people" type="button" role="tab" aria-controls="nav-people"
+                                aria-selected="false"><i class="fas fa-user-friends"></i>People</button>
+                        </div>
+                    </nav>
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <!-- About Section -->
+                    <div class="tab-pane fade show active" id="nav-about" role="tabpanel"
+                        aria-labelledby="nav-about-tab">
+                        <div class="box shadow-sm border rounded bg-white mb-3">
+                            <div class="box-title border-bottom p-3">
+                                <h6 class="m-0">About</h6>
+                            </div>
+                            <div class="box-body p-3">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum
+                                </p>
+                            </div>
+                        </div>
+                        <div class="box shadow-sm border rounded bg-white mb-3">
+                            <div class="box-title border-bottom p-3">
+                                <h6 class="m-0">Overview</h6>
+                            </div>
+                            <div class="box-body">
+                                <table class="table table-borderless mb-0">
+                                    <tbody>
+                                        <tr class="border-bottom">
+                                            <th class="p-3">Website</th>
+                                            <td class="p-3 company_link"><a href="#">bestitalytaste.ie</a></td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <th class="p-3">Industry</th>
+                                            <td class="p-3">Restaurant</td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <th class="p-3">Company size</th>
+                                            <td class="p-3">2 - 10 employees</td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <th class="p-3">Headquarters</th>
+                                            <td class="p-3">Limerick, Ireland</td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <th class="p-3">Type</th>
+                                            <td class="p-3">Public Company</td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <th class="p-3">Founded</th>
+                                            <td class="p-3">2011</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="p-3">Specialties</th>
+                                            <td class="p-3">Italian Food</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Posts Section -->
+                    <div class="tab-pane fade" id="nav-posts" role="tabpanel" aria-labelledby="nav-posts-tab">
+                        <div class="post-box shadow border rounded bg-white mb-3 shared__post">
+                            <div class="p-3 d-flex align-items-center border-bottom">
+                                <div class="mr-3 post-image">
+                                    <img class="rounded-circle" src="images/profile.png" alt="">
+                                </div>
+                                <div class="shared__post-info">
+                                    <div class="shared__post-name">John Doe</div>
+                                    <div class="shared__post-position">Chef at Rizzaros</div>
+                                </div>
+                                <span class="ml-auto small">3 hours</span>
+                            </div>
+                            <div class="p-3 border-bottom shared__post-body">
+                                <p class="mb-0">Tmpo incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    veniam, quis
+                                    nostrud exercitation ullamco <a href="#">laboris consequat.</a></p>
+                            </div>
+                            <div class="p-3 border-bottom shared__post-body">
+                                <a href="#" class="mr-3 text-secondary"><i class="far fa-heart text-danger"></i> 16</a>
+                            </div>
+                            <div class="p-3 border-bottom shared__post-footer">
+                                <a href="#" class="mr-3 text-secondary"><i class="far fa-thumbs-up"></i> Like</a>
+                                <a href="#" class="mr-3 text-secondary"><i class="far fa-comment-alt"></i> Comment</a>
+                                <a href="#" class="mr-3 text-secondary"><i class="fas fa-share-alt"></i> Share</a>
+                            </div>
+                            <div class="p-3">
+                                <textarea placeholder="Add Comment..." class="form-control border-0 p-0 shadow-none"
+                                    rows="1"></textarea>
+                            </div>
+                        </div>
+                        <div class="post-box mb-3 shadow border rounded bg-white shared__post">
+                            <div class="p-3 d-flex align-items-center border-bottom">
+                                <div class="mr-3 post-image">
+                                    <img class="rounded-circle" src="images/profile.png" alt="">
+                                </div>
+                                <div class="shared__post-info">
+                                    <div class="shared__post-name">Alex Martin</div>
+                                    <div class="shared__post-position">Chef at Rizzaros</div>
+                                </div>
+                                <span class="ml-auto small">3 hours</span>
+                            </div>
+                            <div class="p-3 border-bottom shared__post-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur 😍😎 adipisicing elit, sed do eiusmod tempo
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco <a href="#">laboris consequat.</a></p>
+                                <img src="images/post_image.jpg" class="img-fluid" alt="Responsive image">
+                            </div>
+                            <div class="p-3 border-bottom shared__post-body">
+                                <a href="#" class="mr-3 text-secondary"><i class="far fa-heart text-danger"></i> 30</a>
+                            </div>
+                            <div class="p-3 border-bottom shared__post-footer">
+                                <a href="#" class="mr-3 text-secondary"><i class="far fa-thumbs-up"></i> Like</a>
+                                <a href="#" class="mr-3 text-secondary"><i class="far fa-comment-alt"></i> Comment</a>
+                                <a href="#" class="mr-3 text-secondary"><i class="fas fa-share-alt"></i> Share</a>
+                            </div>
+                            <div class="p-3 d-flex align-items-center border-bottom">
+                                <div class="mr-3 post-image">
+                                    <img class="rounded-circle" src="images/profile.png" alt="">
+                                </div>
+                                <div class="shared__post-info">
+                                    <div class="shared__post-name">Alex Martin</div>
+                                    <div class="shared__post-position">Chef at Rizzaros</div>
+                                </div>
+                                <span class="ml-auto small">2 min</span>
+                            </div>
+                            <div class="p-3 border-bottom shared__post-body">
+                                <p>This is post comment...</a></p>
+                            </div>
+                            <div class="p-3">
+                                <textarea placeholder="Add Comment..." class="form-control border-0 p-0 shadow-none"
+                                    rows="1"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Jobs Section -->
+                    <div class="tab-pane fade" id="nav-jobs" role="tabpanel" aria-labelledby="nav-jobs-tab">
+                        <div class="box shadow border rounded bg-white p-3">
+                            <div class="row">
+                                <div class="col-md-6 company_link">
+                                    <a href="job-profile.html">
+                                        <div class="border job-item mb-3">
+                                            <div class="d-flex align-items-center p-3 job-item-header post-image">
+                                                <div class="overflow-hidden mr-2">
+                                                    <h6 class="shared__post-name mb-0 text-truncate">Chef</h6>
+                                                    <div class="text-truncate">Rizzaros</div>
+                                                    <div class="small"><i class="fas fa-map-marker-alt"></i> Limerick,
+                                                        Ireland</div>
+                                                </div>
+                                                <img class="img-fluid ml-auto" src="images/logo.png" alt="">
+                                            </div>
+                                            <div class="p-3 job-item-footer">
+                                                <div class="small"><i class="far fa-clock"></i> Posted 3 Daysago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 company_link">
+                                    <a href="job-profile.html">
+                                        <div class="border job-item mb-3">
+                                            <div class="d-flex align-items-center p-3 job-item-header post-image">
+                                                <div class="overflow-hidden mr-2">
+                                                    <h6 class="shared__post-name mb-0 text-truncate">Chef</h6>
+                                                    <div class="text-truncate">Rizzaros</div>
+                                                    <div class="small"><i class="fas fa-map-marker-alt"></i> Limerick,
+                                                        Ireland</div>
+                                                </div>
+                                                <img class="img-fluid ml-auto" src="images/logo.png" alt="">
+                                            </div>
+                                            <div class="p-3 job-item-footer">
+                                                <div class="small"><i class="far fa-clock"></i> Posted 3 Daysago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 company_link">
+                                    <a href="job-profile.html">
+                                        <div class="border job-item mb-3">
+                                            <div class="d-flex align-items-center p-3 job-item-header post-image">
+                                                <div class="overflow-hidden mr-2">
+                                                    <h6 class="shared__post-name mb-0 text-truncate">Chef</h6>
+                                                    <div class="text-truncate">Rizzaros</div>
+                                                    <div class="small"><i class="fas fa-map-marker-alt"></i> Limerick,
+                                                        Ireland</div>
+                                                </div>
+                                                <img class="img-fluid ml-auto" src="images/logo.png" alt="">
+                                            </div>
+                                            <div class="p-3 job-item-footer">
+                                                <div class="small"><i class="far fa-clock"></i> Posted 3 Daysago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 company_link">
+                                    <a href="job-profile.html">
+                                        <div class="border job-item mb-3">
+                                            <div class="d-flex align-items-center p-3 job-item-header post-image">
+                                                <div class="overflow-hidden mr-2">
+                                                    <h6 class="shared__post-name mb-0 text-truncate">Chef</h6>
+                                                    <div class="text-truncate">Rizzaros</div>
+                                                    <div class="small"><i class="fas fa-map-marker-alt"></i> Limerick,
+                                                        Ireland</div>
+                                                </div>
+                                                <img class="img-fluid ml-auto" src="images/logo.png" alt="">
+                                            </div>
+                                            <div class="p-3 job-item-footer">
+                                                <div class="small"><i class="far fa-clock"></i> Posted 3 Daysago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 company_link">
+                                    <a href="job-profile.html">
+                                        <div class="border job-item mb-3">
+                                            <div class="d-flex align-items-center p-3 job-item-header post-image">
+                                                <div class="overflow-hidden mr-2">
+                                                    <h6 class="shared__post-name mb-0 text-truncate">Chef</h6>
+                                                    <div class="text-truncate">Rizzaros</div>
+                                                    <div class="small"><i class="fas fa-map-marker-alt"></i> Limerick,
+                                                        Ireland</div>
+                                                </div>
+                                                <img class="img-fluid ml-auto" src="images/logo.png" alt="">
+                                            </div>
+                                            <div class="p-3 job-item-footer">
+                                                <div class="small"><i class="far fa-clock"></i> Posted 3 Daysago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 company_link">
+                                    <a href="job-profile.html">
+                                        <div class="border job-item mb-3">
+                                            <div class="d-flex align-items-center p-3 job-item-header post-image">
+                                                <div class="overflow-hidden mr-2">
+                                                    <h6 class="shared__post-name mb-0 text-truncate">Chef</h6>
+                                                    <div class="text-truncate">Rizzaros</div>
+                                                    <div class="small"><i class="fas fa-map-marker-alt"></i> Limerick,
+                                                        Ireland</div>
+                                                </div>
+                                                <img class="img-fluid ml-auto" src="images/logo.png" alt="">
+                                            </div>
+                                            <div class="p-3 job-item-footer">
+                                                <div class="small"><i class="far fa-clock"></i> Posted 3 Daysago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 company_link">
+                                    <a href="job-profile.html">
+                                        <div class="border job-item mb-3">
+                                            <div class="d-flex align-items-center p-3 job-item-header post-image">
+                                                <div class="overflow-hidden mr-2">
+                                                    <h6 class="shared__post-name mb-0 text-truncate">Chef</h6>
+                                                    <div class="text-truncate">Rizzaros</div>
+                                                    <div class="small"><i class="fas fa-map-marker-alt"></i> Limerick,
+                                                        Ireland</div>
+                                                </div>
+                                                <img class="img-fluid ml-auto" src="images/logo.png" alt="">
+                                            </div>
+                                            <div class="p-3 job-item-footer">
+                                                <div class="small"><i class="far fa-clock"></i> Posted 3 Daysago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-md-6 company_link">
+                                    <a href="job-profile.html">
+                                        <div class="border job-item mb-3">
+                                            <div class="d-flex align-items-center p-3 job-item-header post-image">
+                                                <div class="overflow-hidden mr-2">
+                                                    <h6 class="shared__post-name mb-0 text-truncate">Chef</h6>
+                                                    <div class="text-truncate">Rizzaros</div>
+                                                    <div class="small"><i class="fas fa-map-marker-alt"></i> Limerick,
+                                                        Ireland</div>
+                                                </div>
+                                                <img class="img-fluid ml-auto" src="images/logo.png" alt="">
+                                            </div>
+                                            <div class="p-3 job-item-footer">
+                                                <div class="small"><i class="far fa-clock"></i> Posted 3 Daysago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- People Section -->
+                    <div class="tab-pane fade" id="nav-people" role="tabpanel" aria-labelledby="nav-people-tab">
+                        <div class="box shadow border rounded bg-white mb-3">
+                            <div class="p-3 d-flex align-items-center border-bottom">
+                                <div class="mr-3 post-image">
+                                    <img class="rounded-circle" src="images/profile.png" alt="">
+                                </div>
+                                <div class="shared__post-info">
+                                    <div class="shared__post-name">Alex Martin</div>
+                                    <div class="shared__post-position">Chef at Rizzaros</div>
+                                </div>
+                                <div class="ml-auto">
+                                    <a class="button btn dark" type="button" href="#"><i class="fas fa-plus"></i>
+                                        Connect</a>
+                                </div>
+                            </div>
+                            <div class="p-3 d-flex align-items-center border-bottom">
+                                <div class="mr-3 post-image">
+                                    <img class="rounded-circle" src="images/profile.png" alt="">
+                                </div>
+                                <div class="shared__post-info">
+                                    <div class="shared__post-name">Alex Martin</div>
+                                    <div class="shared__post-position">Chef at Rizzaros</div>
+                                </div>
+                                <div class="ml-auto">
+                                    <a class="button btn dark" type="button" href="#"><i class="fas fa-plus"></i>
+                                        Connect</a>
+                                </div>
+                            </div>
+                            <div class="p-3 d-flex align-items-center border-bottom">
+                                <div class="mr-3 post-image">
+                                    <img class="rounded-circle" src="images/profile.png" alt="">
+                                </div>
+                                <div class="shared__post-info">
+                                    <div class="shared__post-name">Alex Martin</div>
+                                    <div class="shared__post-position">Chef at Rizzaros</div>
+                                </div>
+                                <div class="ml-auto">
+                                    <a class="button btn dark" type="button" href="#"><i class="fas fa-plus"></i>
+                                        Connect</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box shadow border rounded bg-white mb-3">
+                            <div class="box-title border-bottom p-3">
+                                <h6 class="m-0">Careers at Rizzaros</h6>
+                            </div>
+                            <div class="box-body p-3">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+    <script src="vendors/jquery/jquery.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+</body>
+
+</html>
