@@ -66,6 +66,10 @@ h1 {
   font-weight: 600;
 }
 
+.text-primary {
+  color: #5c6e58 !important;
+}
+
 
 /* SPACING STYLES */
 .ml-auto {

@@ -83,7 +83,7 @@
                     <h6 class="p-3 border-bottom mb-0 pb-3">Messaging</h6>
                     <div class="row m-0">
                         <div class="border-right col-lg-5 col-xl-4 px-0">
-                            <div class="osahan-chat-left">
+                            <div class="chat-left">
                                 <div class="position-relative icon-form-control p-3 border-bottom">
                                     <i class="fas fa-search position-absolute"></i>
                                     <input placeholder="Search messages" type="text" class="form-control">
@@ -218,16 +218,15 @@
                                 </div>
                                 <span class="ml-auto">
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn-light btn-sm rounded"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </button>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <button class="dropdown-item" type="button"><i class="feather-trash"></i>
-                                                Delete</button>
-                                            <button class="dropdown-item" type="button"><i class="feather-x-circle"></i>
-                                                Turn Off</button>
-                                        </div>
+                                        <div class="dropdown">
+                                            <button class="btn btn-light btn-sm rounded" type="button" id="dropdownMenuDots" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuDots">
+                                              <li><a class="dropdown-item" href="#"><i class="feather-trash"></i>Delete</a></li>
+                                              <li><a class="dropdown-item" href="#"><i class="feather-x-circle"></i>Turn Off</a></li>
+                                            </ul>
+                                          </div>
                                     </div>
                                 </span>
                             </div>
@@ -318,8 +317,7 @@
 
     </div>
     <script src="js/main.js"></script>
-    <script src="vendors/jquery/jquery.min.js"></script>
-    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
