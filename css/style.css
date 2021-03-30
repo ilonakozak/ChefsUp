@@ -678,8 +678,34 @@ input.form-control {
   min-height: 463px;
 }
 
+.dropdown-menu {
+  color: #273e4b;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
 /* PROFILE PAGE STYLE */
 
+/* JOBS PAGE STYLE */
+.job-tags .btn-outline-secondary {
+  color: #273e4b;
+    border-color: #dee2e6!important;
+}
+
+.job-tags .btn-outline-primary {
+  color: #5c6e58;
+  border-color: #5c6e58;
+}
+
+.job-tags .btn-outline-secondary:hover, .job-tags .btn-outline-primary:hover {
+  color: #fff;
+  border-color: #5c6e58;
+  background-color: #5c6e58;
+} 
+
+.job-tags .btn {
+  margin: 3px 1px !important;
+}
 
 
 
@@ -721,6 +747,7 @@ input.form-control {
   .header__navbar .navbar-nav .dropdown-menu {
     margin-left: -40px;
   }
+
 
 }
 
