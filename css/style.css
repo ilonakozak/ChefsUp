@@ -26,21 +26,45 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  animation: chbg 15s infinite alternate;
 }
 
-.header__top-img.messages {
-  width: 100%;
-  height: 300px;
-  background-image: url(../images/header_cover2.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+@keyframes chbg {
+  0% {
+    background: url(../images/header_cover.jpg);
+    background-size: cover
+  }
+
+  20% {
+    background: url(../images/header_cover2.jpg);
+    background-size: cover
+  }
+
+  40% {
+    background: url(../images/header_cover3.jpg);
+    background-size: cover
+  }
+
+  60% {
+    background: url(../images/header_cover4.jpg);
+    background-size: cover
+  }
+
+  80% {
+    background: url(../images/header_cover5.jpg);
+    background-size: cover
+  }
+
+  100% {
+    background: url(../images/header_cover6.jpg);
+    background-size: cover
+  }
 }
 
-.header__top-img.company {
+.header__top-img_company {
   width: 100%;
   height: 300px;
-  background-image: url(../images/header_cover3.jpg);
+  background-image: url(../images/header_cover_company.jpg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -648,7 +672,10 @@ button#nav-link-tab.nav-link {
   width: 240px;
 }
 
-.left__box-profile a, .left__box-connections a, .right__box-jobs a, .company_link a {
+.left__box-profile a,
+.left__box-connections a,
+.right__box-jobs a,
+.company_link a {
   color: #5c6e58;
   text-decoration: none;
   font-weight: 600;
@@ -663,15 +690,17 @@ button#nav-link-tab.nav-link {
   font-size: 16px;
   justify-content: center;
   width: 40px;
-} 
+}
 
 input.form-control {
   padding-left: 30px;
 }
+
 .main__content-chat-box {
   height: 378px;
   overflow-y: scroll;
 }
+
 .main__content-chat-list {
   overflow-y: auto;
   height: 463px;
@@ -689,7 +718,7 @@ input.form-control {
 /* JOBS PAGE STYLE */
 .job-tags .btn-outline-secondary {
   color: #273e4b;
-    border-color: #dee2e6!important;
+  border-color: #dee2e6 !important;
 }
 
 .job-tags .btn-outline-primary {
@@ -697,11 +726,12 @@ input.form-control {
   border-color: #5c6e58;
 }
 
-.job-tags .btn-outline-secondary:hover, .job-tags .btn-outline-primary:hover {
+.job-tags .btn-outline-secondary:hover,
+.job-tags .btn-outline-primary:hover {
   color: #fff;
   border-color: #5c6e58;
   background-color: #5c6e58;
-} 
+}
 
 .job-tags .btn {
   margin: 3px 1px !important;
