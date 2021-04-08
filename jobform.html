@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChefsUp</title>
+    <link href="vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header__top-img_company">
+        <nav class="header__navbar navbar navbar-expand-md fixed-top">
+            <div class="container">
+                <div>
+                    <a class="navbar-brand" href="home.html"><img class="img-fluid" src="images/logo.png"
+                            alt="company logo"></a>
+                    <form class="d-none d-sm-inline-block form-inline mr-auto my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control shadow-none border-0"
+                                placeholder="Search people, jobs & more" aria-label="Search"
+                                aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn" type="button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <ul class="navbar-nav ml-auto d-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html"><i class="fas fa-home"></i><span
+                                class="d-none d-lg-inline">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="connections.html"><i class="fas fa-user-friends"></i><span
+                                class="d-none d-lg-inline">My Network</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jobs.html"><i class="fas fa-briefcase"></i><span
+                                class="d-none d-lg-inline">Jobs</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="messages.html"><i class="fas fa-comment-dots"></i><span
+                                class="d-none d-lg-inline">Messaging</span></a>
+                    </li>
+                    <div class="collapse navbar-collapse" id="navbarDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"><img class="img-profile rounded-circle"
+                                        src="images/profile.png">
+                                    <span class="d-none d-lg-inline">Me</span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="DropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#"><i class="far fa-edit"></i>My Account</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="far fa-user"></i>Edit Profile</a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container content">
+        <div class="row">
+            <main class="main__content col col-12">
+                <div class="box shadow rounded bg-white mb-3 main__content-jobs">
+                    <h6 class="p-3 border-bottom mb-0 pb-3">Create a Job Vacancy Ad</h6>
+                    <div class="box bg-white p-3 m-3 job_post">
+                        <p class="text-danger small">* required field</p>
+
+                        <form method="post" action="jobs.php">
+                            <p>
+                                <label for="jtitle" class="jtitle">Job Title:</label>
+                                <input required="required" type="text" name="jtitle">
+                                <span class="text-danger">*</span>
+                            </p>
+                            <p>
+                                <label for="organisationid" class="organisationid">Organisation ID:</label>
+                                <input required="required" type="text" name="organisationid">
+                                <span class="text-danger">*</span>
+                            </p>
+                            <p>
+                                <label for="jdescription" class="jdescription">Job Description:</label>
+                                <textarea name="jdescription" id="jdescription" cols="40"
+                                    rows="5"></textarea>
+                            </p>
+                            <p>
+                                <label for="requiredexperience" class="requiredexperience">Required Experience:</label>
+                                <textarea name="requiredexperience" id="requiredexperience" cols="40"
+                                    rows="5"></textarea>
+                            </p>
+                            <p>
+                                <fieldset>
+                                    <legend>Status: <span class="text-danger">*</span></legend>
+                                    <label>
+                                        <input type="radio" name="status"
+                                            value="available">Available
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="status"
+                                            value="filled">Filled
+                                    </label>
+                                    
+                                </fieldset>
+                            </p>
+                            <p class="signin button">
+                                <input type="submit" value="Submit" />
+                              </p>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -26,7 +26,7 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  animation: chbg 15s infinite alternate;
+  animation: chbg ease-in-out 15s infinite alternate;
 }
 
 @keyframes chbg {
@@ -749,6 +749,81 @@ input.form-control {
 .job-tags .btn {
   margin: 3px 1px !important;
 }
+
+/* JOB POST PAGE STYLE */
+.job_post {
+  width: 90%;
+}
+
+.job_post a {
+  color: #273e4b;
+  text-decoration: underline;
+}
+
+.job_post p {
+  margin: 15px 0;
+}
+
+.job_post label, .job_post legend  {
+  color: #273e4b;
+  position: relative;
+  font-size: 1rem;
+}
+
+.job_post input:not([type="checkbox"]) {
+  width: 95%;
+  margin-top: 4px;
+  padding: 10px 5px 10px 30px;
+  border: 1px solid #ddd;
+}
+
+.job_post input:not([type="checkbox"]):active,
+.job_post input:not([type="checkbox"]):focus {
+  border: 1px solid #ddd;
+  background: #ddd;
+}
+
+.job_post textarea {
+  width: 95%;
+  margin-top: 4px;
+  padding: 10px 5px 10px 30px;
+  border: 1px solid #ddd;
+}
+
+.job_post fieldset label {
+  margin: 0 30px;
+}
+
+.job_post p.signin.button {
+  text-align: left;
+  margin: 5px 0;
+}
+
+.job_post p.button input {
+  width: 95%;
+  cursor: pointer;
+  background: #273e4b;
+  padding: 8px 5px;
+  color: #fff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.job_post p.button input:hover {
+  background: #5c6e58;
+}
+
+.job_post p.button input:active,
+.job_post p.button input:focus {
+  position: relative;
+  top: 1px;
+}
+
 
 /* CONNECTIONS PAGE STYLE */
 .connection_item {
