@@ -1,0 +1,89 @@
+/* SIDEBAR STYLES */
+
+h2 {
+    color: #efede0;
+    font-size: 1.5rem;
+}
+
+.dashboard nav.navbar.sticky-top{
+    background-color: #5c6e58;
+}
+
+.dashboard .admin {
+    background-color: #273e4b;
+    padding: 17px 0;
+}
+
+input.form-control::placeholder {
+    color: #efede0;
+}
+
+.navbar.sticky-top a.nav-link {
+    color: #efede0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 70px;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #273e4b;
+    padding: 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+    top: 62px;
+    height: auto;
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.sidebar .nav-link {
+    color: #efede0;
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: 0;
+}
+
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #f3f3f3;
+}
+.sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+/* NAVBAR STYLE */
+.navbar-brand {
+    padding: .5rem;
+}
+
+.navbar .form-control {
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+}
+
+.form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+/* MAIN BLOCK STYLE */
+main {
+    position: absolute;
+    right: 0;
+}

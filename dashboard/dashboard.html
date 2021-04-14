@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChefsUp</title>
+    <link href="../vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/dashboard.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+</head>
+
+<body class="dashboard">
+    <nav class="navbar sticky-top flex-md-nowrap p-0">
+        <div class="admin col-sm-3 col-md-2 mr-0 text-center">
+            <h2>Admin Panel</h2>
+        </div>
+        <a class="navbar-brand mr-3" href="../home.html"><img class="img-fluid" src="../images/logo.png"
+                alt="company logo"></a>
+        <input class="form-control form-control-dark mx-3 w-100" type="text" placeholder="Search" aria-label="Search">
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+                <a class="nav-link" href="#">Sign out</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="nav nav-tabs col-md-2 d-none d-md-block sidebar" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-dashboard-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-dashboard" type="button" role="tab" aria-controls="nav-dashboard"
+                    aria-selected="true"><i class="fas fa-tachometer-alt"></i> Dashboard</button>
+                <button class="nav-link" id="nav-users-tab" data-bs-toggle="tab" data-bs-target="#nav-users"
+                    type="button" role="tab" aria-controls="nav-users" aria-selected="false"><i class="fas fa-user"></i> Users</button>
+                <button class="nav-link" id="nav-company-tab" data-bs-toggle="tab" data-bs-target="#nav-company"
+                    type="button" role="tab" aria-controls="nav-company" aria-selected="false"><i class="fas fa-building"></i> Companies</button>
+                <button class="nav-link" id="nav-posts-tab" data-bs-toggle="tab" data-bs-target="#nav-posts"
+                    type="button" role="tab" aria-controls="nav-posts" aria-selected="false"><i class="fas fa-thumbtack"></i> Posts</button>
+                <button class="nav-link" id="nav-jobs-tab" data-bs-toggle="tab" data-bs-target="#nav-jobs" type="button"
+                    role="tab" aria-controls="nav-jobs" aria-selected="false"><i class="fas fa-briefcase"></i> Jobs</button>
+
+            </div>
+            <main class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                <div class="tab-content" id="nav-tabContent">
+                    <!-- Dashboard Section -->
+                    <div class="tab-pane fade show active" id="nav-dashboard" role="tabpanel"
+                        aria-labelledby="nav-dashboard-tab">
+                        <div class="box border rounded bg-white mb-3">
+                            <div class="box-title border-bottom p-3">
+                                <h6 class="m-0">Dashboard</h6>
+                            </div>
+                            <div class="box-body p-3">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Users Section -->
+                    <div class="tab-pane fade show" id="nav-users" role="tabpanel" aria-labelledby="nav-users-tab">
+                        <div class="box border rounded bg-white mb-3">
+                            <div class="box-title border-bottom p-3">
+                                <h6 class="m-0">Users</h6>
+                            </div>
+                            <div class="box-body p-3">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Companies Section -->
+                    <div class="tab-pane fade show" id="nav-company" role="tabpanel" aria-labelledby="nav-company-tab">
+                        <div class="box border rounded bg-white mb-3">
+                            <div class="box-title border-bottom p-3">
+                                <h6 class="m-0">Users</h6>
+                            </div>
+                            <div class="box-body p-3">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Posts Section -->
+                    <div class="tab-pane fade show" id="nav-posts" role="tabpanel" aria-labelledby="nav-posts-tab">
+                        <div class="box border rounded bg-white mb-3">
+                            <div class="box-title border-bottom p-3">
+                                <h6 class="m-0">Posts</h6>
+                            </div>
+                            <div class="box-body p-3">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Jobs Section -->
+                    <div class="tab-pane fade show" id="nav-jobs" role="tabpanel" aria-labelledby="nav-jobs-tab">
+                        <div class="box border rounded bg-white mb-3">
+                            <div class="box-title border-bottom p-3">
+                                <h6 class="m-0">Job Ads</h6>
+                            </div>
+                            <div class="box-body p-3">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+            </main>
+
+
+
+        </div>
+    </div>
+
+
+    <script src="../js/main.js"></script>
+    <script src="../vendors/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
