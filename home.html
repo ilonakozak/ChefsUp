@@ -15,6 +15,14 @@
 <body>
     <!-- Header -->
     <header class="header__top-img">
+        <ul class="cb-slideshow">
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+        </ul>
         <nav class="header__navbar navbar navbar-expand-md fixed-top">
             <div class="container">
                 <div>
@@ -95,24 +103,25 @@
                                     class="fas fa-link"></i> Share a link</button>
                         </div>
                     </nav>
+                    <form class="" action="home.html" method="post" enctype="multipart/form-data">
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="nav-article" role="tabpanel"
                             aria-labelledby="nav-article-tab">
-                            <div class="p-3 w-100">
-                                <textarea placeholder="Write your thoughts..."
-                                    class="form-control border-0 p-0 shadow-none" rows="3"></textarea>
+                            <div class="p-3 w-100 form-grup">
+                                <textarea id="Post" name="PostDescription" placeholder="Write your thoughts..."
+                                    class="form-control border-0 p-0 shadow-none" rows="8" cols="80"></textarea>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="nav-photo" role="tabpanel" aria-labelledby="nav-photo-tab">
-                            <div class="p-3 w-100">
-                                <label for="myfile">Select a file:</label>
-                                <input type="file" id="myfile" name="myfile">
+                            <div class="p-3 w-100 form-grup">
+                                <label for="imageSelect">Select Image</label>
+                                <input type="file" id="imageSelect" name="Image" value="">
                             </div>
                         </div>
                         <div class="tab-pane fade" id="nav-link" role="tabpanel" aria-labelledby="nav-link-tab">
                             <div class="p-3 w-100">
                                 <label for="url">Website URL</label>
-                                <input type="url" name="url" id="url">
+                                <input type="url" name="PostUrl" id="url">
                             </div>
                         </div>
                     </div>
@@ -121,6 +130,7 @@
                             <input class="btn btn-primary" type="submit" value="Post">
                         </div>
                     </div>
+                </form>
                 </div>
                 <!-- Posts Section -->
                 <div class="post-box shadow border rounded bg-white mb-3 shared__post">
